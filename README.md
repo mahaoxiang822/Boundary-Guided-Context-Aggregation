@@ -48,6 +48,8 @@ sh tool/train.sh cityscapes [bcanet50/bcanet101]
 ```
 
 ADE20K
+
+ - To accelerate the training speed on ADE20K, please pre-generate the ground truth of boundary. You can download the pre-generate boundary gt from [GoogleDrive](https://drive.google.com/drive/folders/1wHqM2k25ulB6wUB7vxHMuEbAGFfeHH3N?usp=sharing)
 ```
 sh tool/trainade.sh ade20k [bcanet50/bcanet101]
 ```

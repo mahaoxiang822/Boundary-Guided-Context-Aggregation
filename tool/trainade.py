@@ -105,7 +105,7 @@ def main_worker(gpu, ngpus_per_node, argss):
     from tool import loss
     criterion = loss.get_loss(args)
 
-    if args.arch == "BCANet":
+    if args.arch == "bcanet":
         from model.BCANet import BCANet
         model = BCANet(num_classes=args.classes, BatchNorm=BatchNorm, layers=args.layers,
                              multi_grid=tuple(args.multi_grid),
